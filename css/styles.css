@@ -1,0 +1,445 @@
+/* Aplicado a todo o site */
+html {
+    background-color: #2e2f5b;
+}
+
+body {
+    background-color: #f4f7fc;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a,
+a:visited,
+a:hover {
+    text-decoration: none;
+    color: #f4f7fc;
+}
+
+.english {
+    font-weight: 900;
+}
+
+/* Navbar */
+
+#header {
+    background-color: #332c49;
+}
+
+.navbar-color {
+    background-color: #332c49;
+}
+
+.navbar-nav {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#byEdu {
+    width: 175px;
+}
+
+/* FOOTER */
+
+#footer {
+    background-color: #2e2f5b;
+    text-align: center;
+    color: #f4f7fc;
+    font-size: .8rem;
+}
+
+.footerico {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #f4f7fc;
+}
+
+.footer-links {
+    text-align: left;
+}
+
+.footer-links h4 {
+    padding: 10% 0 3% 0;
+}
+
+.link-footer {
+    padding: 3px 0 3px 0;
+}
+
+/* START OF INDEX */
+/* Introduction */
+
+#intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7% 0;
+    text-align: center;
+}
+
+.introbox {
+    padding: 20px 0 20px 0;
+}
+
+.intro-text {
+    padding-bottom: 30px;
+}
+
+.computerMe {
+    text-align: center;
+    width: 60%;
+}
+
+.intro-text h1 {
+    font-weight: 500;
+    font-size: 2.4rem;
+}
+
+#intro h3 {
+    color: #505581;
+}
+
+.saibamais {
+    margin-top: 20px;
+}
+
+.saibamaisbutton {
+    background-color: #332c49;
+    color: #f4f7fc
+}
+
+.imgdiv {
+    text-align: center;
+}
+
+/* ADVANTAGES */
+
+.advantages {
+    background-color: #2e2f5b;
+    color: #f4f7fc;
+    padding-top: 15%;
+    text-align: center;
+}
+
+.adv-cards {
+    padding: 30px;
+}
+
+.adv-cards h3 {
+    padding: 15px 0 15px 0;
+}
+
+/* CTA */
+
+#cta {
+    text-align: center;
+}
+
+#cta p {
+    font-size: 1.2rem;
+    padding: 10% 3% 5% 3%;
+}
+
+.cta-wrapper {
+    padding: 10% 0 15% 0;
+}
+
+.cta-wrapper h1 {
+    font-weight: 700;
+}
+
+.cta-wrapper a {
+    color: #f4f7fc;
+    font-weight: 600;
+}
+
+.cta-wrapper .curso-link {
+    color: #2e2f5b;
+    font-weight: bold;
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cta-btn-style:hover {
+    text-decoration: none;
+    color: #f4f7fc;
+}
+
+.button-instagram {
+    background-color: #ac2bac;
+}
+
+.button-whatsapp {
+    background-color: #25d366;
+}
+
+.img-desktop {
+    display: none;
+}
+
+
+/* Animations */
+.saibamais {
+    animation: pulse 1s infinite;
+}
+
+/* END OF INDEX */
+
+/* blog */
+.message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* START OF ABOUT */
+
+#intro-about-me h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+#intro-about-me p {
+    font-size: 1.2rem;
+}
+
+.about-me-box {
+    text-align: center;
+}
+
+.myPic {
+    width: 80%;
+    padding-bottom: 5%;
+    border-radius: 50%;
+}
+
+h1 {
+    padding-top: 5%;
+}
+
+
+/* COURSE TYPES */
+
+#courseinfo {
+    text-align: center;
+    background-color: #2e2f5b;
+}
+
+#courseinfo h1 {
+    color: #f4f7fc;
+    padding-top: 8%;
+    font-weight: bold;
+}
+
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.card-container .card {
+    margin: 5px;
+}
+
+.card .card-header {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.card .card-text {
+    font-size: 1.1rem;
+}
+
+/* CTA - ABOUT */
+
+.matricula {
+    font-weight: bold;
+    padding-bottom: 10%;
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 769px) {
+
+    /* NAVBAR */
+    .navbar-nav {
+        justify-content: end;
+    }
+
+    .nav-item {
+        padding: 0 3%;
+    }
+
+    /* INTRO */
+    #intro {
+        padding: 7% 0;
+        text-align: left;
+        height: 100vh;
+    }
+
+    .intro-text {
+        padding-bottom: 0;
+    }
+
+    #intro .btn {
+        height: 15%;
+        width: 30%;
+        font-size: 1.3rem;
+    }
+
+    .computerMe {
+        position: relative;
+        left: 15%;
+        bottom: 15%;
+    }
+
+    .intro-text h1 {
+        font-weight: 500;
+        font-size: 2.8rem;
+    }
+
+    .saibamais {
+        margin-top: 30px;
+    }
+
+    .imgdiv {
+        text-align: center;
+    }
+
+    /* ADVANTAGES */
+
+    .advantages {
+        padding: 8% 0;
+        text-align: center;
+    }
+
+    .adv-list {
+        display: flex;
+    }
+
+    .adv-cards {
+        padding: 15px 10px;
+    }
+
+    .adv-cards h3 {
+        padding: 15px 0 15px 0;
+        font-size: 1.4rem;
+    }
+
+
+    /* CTA */
+
+    .cta-wrapper h1 {
+        font-weight: 700;
+        font-size: 2.5rem;
+    }
+
+    #cta p {
+        font-size: 2rem;
+        padding: 10% 0;
+    }
+
+    .cta-wrapper a {
+        font-weight: 600;
+    }
+
+    .button-instagram,
+    .button-whatsapp {
+        width: 30%;
+        margin: 0 5% 0 0;
+        font-size: 1.3rem;
+    }
+
+    /* FOOTER */
+
+    #footer {
+        text-align: left;
+        font-size: 1rem;
+    }
+    
+    .footerico {
+        font-size: 2rem;
+    }
+    
+    .footer-links {
+        text-align: left;
+    }
+    
+    .footer-links h4 {
+        padding: 3% 0 1% 0;
+    }
+    
+    .link-footer {
+        padding: 3px 0 3px 0;
+    }
+
+    .socialmediadiv {
+        padding-top: 5%;
+    }
+
+    /* ABOUT */
+
+    #intro-about-me {
+        padding-bottom: 5%;
+    }
+
+    #intro-about-me h1 {
+        text-align: left;
+    }
+    
+    #intro-about-me p {
+        text-align: left ;
+        font-size: 1.4rem;
+    }
+
+    .myPicDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .myPic {
+        width: 65%;
+    }
+
+}
+
+@media screen and (min-width: 950px) {
+
+    #cta {
+        text-align: left;
+    }
+
+    .line-break {
+        display: block;
+    }
+
+    .img-desktop {
+        display: block;
+        width: 100%;
+    }
+
+    .cta-div-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn-wrapper {
+        display: flex;
+        justify-content: normal;
+    }
+
+}
+
