@@ -270,13 +270,7 @@ h1 {
 
 /* MEDIA QUERIES */
 
-@media screen and (min-width: 769px) {
-
-    /* NAVBAR */
-    .navbar-nav {
-        justify-content: end;
-    }
-
+@media screen and (min-width: 768px) {
     .nav-item {
         padding: 0 3%;
     }
@@ -300,6 +294,7 @@ h1 {
 
     .computerMe {
         position: relative;
+        width: 100%;
         left: 15%;
         bottom: 15%;
     }
@@ -368,6 +363,11 @@ h1 {
         font-size: 1rem;
     }
     
+    .right-col {
+        text-align: right;
+        align-self: flex-end;
+    }
+
     .footerico {
         font-size: 2rem;
     }
@@ -417,6 +417,11 @@ h1 {
 
 @media screen and (min-width: 950px) {
 
+    /* NAVBAR */
+    .navbar-nav {
+        justify-content: end;
+    }
+
     #cta {
         text-align: left;
     }
@@ -440,6 +445,6 @@ h1 {
         display: flex;
         justify-content: normal;
     }
-
+    
 }
 
