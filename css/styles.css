@@ -192,14 +192,6 @@ a:hover {
 
 /* END OF INDEX */
 
-/* blog */
-.message {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
 /* START OF ABOUT */
 
 #intro-about-me h1 {
@@ -264,6 +256,115 @@ h1 {
 .matricula {
     font-weight: bold;
     padding-bottom: 10%;
+}
+
+
+
+/* TextToSpeech and Speaking */
+#practiceBox {
+    padding: 50px;
+}
+
+/* Text to speech */
+
+.space {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #2e2f5b;
+    border-radius: 20px;
+}
+
+.explicacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+#practiceBox {
+    margin: 2% 0 10% 0;
+}
+
+.textSpeech {
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.controlers {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.spaceControlers {
+    margin: 10px 0;
+}
+
+.toSpeechBtn {
+    margin-top: 2%;
+    text-align: center;
+}
+
+/* Speaking */
+
+.studentRecorder {
+    height: 100px;
+    width: 50%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.studentRecorder .recordingMicImg {
+    background-color: #2e2f5b;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.studentRecorder .notrecordingMicImg {
+    background-color: red;
+    border-radius: 50%;
+    display: none;
+    animation: pulse 1s infinite;
+    cursor: pointer;
+}
+
+.studentRecorder .playButtonImg {
+    background-color: green;
+    border-radius: 50%;
+    display: none;
+    cursor: pointer;
+}
+
+.onOff {
+    margin: 0 40px;
+}
+
+.trash {
+    margin: 5% 0 5% 15%;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+#recordedAudio {
+    display: none;
+}
+
+.itsPlaying {
+    animation: flash 2s;
+}
+
+.controlBtn {
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+}
+
+#audioDownload {
+    visibility: hidden;
 }
 
 
@@ -447,4 +548,5 @@ h1 {
     }
     
 }
+
 
