@@ -15,13 +15,13 @@ startRecord.onclick = e => {
   
           if (rec.state == "inactive"){
   
-            let blob = new Blob(audioChunks,{type:'audio/ogg; code=opus'});
+            let blob = new Blob(audioChunks,{type:'audio/mpeg'});
             
             recordedAudio.src = URL.createObjectURL(blob);
             recordedAudio.controls=true;
-            recordedAudio.autoplay=false;
+            recordedAudio.autoplay=true;
             audioDownload.href = recordedAudio.src;
-            audioDownload.download = 'mp3';
+            audioDownload.download = "Audio";
          }
         }
       rec.start();
