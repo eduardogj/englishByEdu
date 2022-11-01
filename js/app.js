@@ -142,7 +142,7 @@ function createDownloadLink(blob) {
 
 	//save to disk link
 	link.href = url;
-	link.download = "myAudio_"+filename+".wav"; //download forces the browser to download the file using the filename
+	link.download = filename+".wav"; //download forces the browser to download the file using the filename
 	link.src = "img/download.svg";
 
 	//add delete button
