@@ -139,11 +139,15 @@ function createDownloadLink(blob) {
 	au.controls = true;
 	au.setAttribute("controlsList", "nodownload");
 	au.src = url;
+	
+	var dlwImg = document.createElement("img");
+	dlwImg.setAttribute("src", "img/download.svg");
 
 	//save to disk link
 	link.href = url;
 	link.download = filename+".wav"; //download forces the browser to download the file using the filename
-	link.src = "img/download.svg";
+	link.appendChild(dlwImg);
+
 
 	//add delete button
 	del.src = "img/remove.svg";
