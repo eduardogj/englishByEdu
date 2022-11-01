@@ -139,6 +139,9 @@ function createDownloadLink(blob) {
 	au.controls = true;
 	au.setAttribute("controlsList", "nodownload");
 	au.src = url;
+	
+	var dlwImg = document.createElement("img");
+	dlwImg.setAttribute("src", "img/download.svg");
 
 	var dlwImg = document.createElement("img");
 	dlwImg.setAttribute("src", "img/download.svg");
