@@ -126,7 +126,7 @@ function createDownloadLink(blob) {
 	var url = URL.createObjectURL(blob);
 	var au = document.createElement('audio');
 	var li = document.createElement('li');
-	var link = document.createElement('img');
+	var link = document.createElement('a');
 	var del = document.createElement('img')
 
 	//name of .wav file to use during upload and download (without extendion)
@@ -140,10 +140,14 @@ function createDownloadLink(blob) {
 	au.setAttribute("controlsList", "nodownload");
 	au.src = url;
 
-	//save to disk link
+	var dlwImg = document.createElement("img");
+	dlwImg.setAttribute("src", "img/download.svg");
+
+	//download link
 	link.href = url;
-	link.download = "myAudio_"+filename+".wav"; //download forces the browser to download the file using the filename
-	link.src = "img/download.svg";
+	link.download = filename+".wav"; //download forces the browser to download the file using the filename
+
+	link.appendChild(dlwImg);
 
 	//add delete button
 	del.src = "img/remove.svg";
